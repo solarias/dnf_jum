@@ -11,105 +11,112 @@
 	</head>
 	</body>
 
-	<div id="wrapper">
-		<div id="top">
-			<div id="server">
+		<div id="wrapper">
+			<div id="top">
+				<div id="server">
+				</div>
+				<div id="character">
+				</div>
+				<div id="go" class="normal">
+				</div>
 			</div>
-			<div id="character">
-			</div>
-			<div id="go" class="normal">
-			</div>
-		</div>
-		
-		<div id="main">
-			<div id="mainText">
-				<h1>오늘의 던파 운세</h1>
-				<p>　당신이 아이템 파밍, 강화, 증폭, 아이템 합성 등을 할 때 무엇인가를 선택해야 한다면,
-				NPC나 몬스터들이 당신 대신 그것을 선택해줍니다.
-				마음에 드는 캐릭터에게 선택을 부탁해보세요.</p>
-				<br/>
-				<br/>
-				<h1>사용 방법</h1>
-				<p>1. 좌측 상단에서 서버를 선택한다.</p>
-				<p>2. NPC나 몬스터를 선택한다. (둘 중 하나만 가능)</p>
-				<p class='small'>　(하나를 고르기 어렵다면, 상단의 "랜덤" 버튼을 클릭하세요.)</p>
-				<p>3. 추천받고 싶은 대상을 선택한다. ("추천받으러 가기" 버튼 위)</p>
-				<p>4. "추천받으러 가기"를 클릭한다.</p>
-				<br/>
-				<p>★ 별도로 '부가 서비스'도 이용하실 수 있습니다.</p>
-				<p class='small'>　(화면 좌측 하단에서 '부가 서비스'를 선택한 후, '접속하기' 클릭)</p>
-				<br/>
-				<br/>
-				<p class='small'>※ 이것의 의의는 "선택하는 부담"을 덜어주는 것에 있습니다.</p>
-				<p class='small'>※ 캐릭터들은 랜덤하게 숫자를 뽑을 뿐, 특별한 방법을 쓰진 않습니다.</p>
-				<p class='small'>※ 어디까지나 재미로만 이용해주시고, 결과가 잘 나오지 않아도 제작자를 탓하지 말아주세요.</p>
-			</div>
-			<iframe id="mainContent" frameBorder="0" border="0">
-			</iframe>
-		
-			<div id="mySetting">
 			
-				<div id='mySettingLeft'>
-					<img id='myShow' src='./images/empty.png' />
+			<div id="main">
+				<div id="mainText">
+					<h1>오늘의 던파 운세</h1>
+					<p>　당신이 아이템 파밍, 강화, 증폭, 아이템 합성 등을 할 때 무엇인가를 선택해야 한다면,
+					NPC나 몬스터들이 당신 대신 그것을 선택해줍니다.
+					마음에 드는 캐릭터에게 선택을 부탁해보세요.</p>
 					<br/>
-					<p>(이미지 크기는 업로드 이후</p>
-					<p>자동으로 조절됩니다.)</p>
+					<br/>
+					<h1>사용 방법</h1>
+					<p>1. 좌측 상단에서 서버를 선택한다.</p>
+					<p>2. NPC나 몬스터를 선택한다. (둘 중 하나만 가능)</p>
+					<p class='small'>　(하나를 고르기 어렵다면, 상단의 "랜덤" 버튼을 클릭하세요.)</p>
+					<p>3. 추천받고 싶은 대상을 선택한다. ("추천받으러 가기" 버튼 위)</p>
+					<p>4. "추천받으러 가기"를 클릭한다.</p>
+					<br/>
+					<p>★ 별도로 '부가 서비스'도 이용하실 수 있습니다.</p>
+					<p class='small'>　(화면 좌측 하단에서 '부가 서비스'를 선택한 후, '접속하기' 클릭)</p>
+					<br/>
+					<br/>
+					<p class='small'>※ 이것의 의의는 "선택하는 부담"을 덜어주는 것에 있습니다.</p>
+					<p class='small'>※ 캐릭터들은 랜덤하게 숫자를 뽑을 뿐, 특별한 방법을 쓰진 않습니다.</p>
+					<p class='small'>※ 어디까지나 재미로만 이용해주시고, 결과가 잘 나오지 않아도 제작자를 탓하지 말아주세요.</p>
 				</div>
+				<iframe id="mainContent" frameBorder="0" border="0">
+				</iframe>
+			
+				<div id="mySetting">
 				
-				<div id='mySettingRight'>
-					<h1>내 캐릭터 설정</h1>
-					<p id='myJobList_p'>직　업 : 
-						<select id='myJobList'>
-							<option value='' selected disabled>직업 리스트</option>
-						</select>
-					</p>
-					<p id='myClassList_p'>전　직 : 
-						<select id='myClassList' disabled='disabled'>
-							<option value='' selected disabled>전직 리스트</option>
-						</select>
-					</p>
-					<p>닉네임 : 
-						<input type='text' id='myText'>
-					</p>
-					<p>일러스트 : 
-						<input type='text' id='myImage' placeholder='URL를 입력하세요' value=''>
-						<br />
-						<input type='button' id='myImageClear' value='초기화'>
-						<input type='button' id='myImageUpload' value='업로드'>
-					</p>
-					<p>
-						<input type='button' id='my_submit' value='' disabled='disabled'>
-						<input type='button' id='my_cancel' value='취소'>
-					</p>
+					<div id='mySettingLeft'>
+						<img id='myShow' src='./images/empty.png' />
+						<br/>
+						<p>(이미지 크기는 업로드 이후</p>
+						<p>자동으로 조절됩니다.)</p>
+					</div>
+					
+					<div id='mySettingRight'>
+						<h1>내 캐릭터 설정</h1>
+						<p id='myJobList_p'>직　업 : 
+							<select id='myJobList'>
+								<option value='' selected disabled>직업 리스트</option>
+							</select>
+						</p>
+						<p id='myClassList_p'>전　직 : 
+							<select id='myClassList' disabled='disabled'>
+								<option value='' selected disabled>전직 리스트</option>
+							</select>
+						</p>
+						<p>닉네임 : 
+							<input type='text' id='myText'>
+						</p>
+						<p>일러스트 : 
+							<input type='text' id='myImage' placeholder='URL를 입력하세요' value=''>
+							<br />
+							<input type='button' id='myImageClear' value='초기화'>
+							<input type='button' id='myImageUpload' value='업로드'>
+						</p>
+						<p>
+							<input type='button' id='my_submit' value='' disabled='disabled'>
+							<input type='button' id='my_cancel' value='취소'>
+						</p>
 
+					</div>
+					<div id='mySettingBottom'>
+						<hr />
+						<p style="margin-top:5px;display:block;">
+							<strong>※</strong> 별도로 업로드된 일러스트가 없으면, 해당 직업/전직 일러스트를 사용합니다.
+						</p>
+					</div>
 				</div>
-				<div id='mySettingBottom'>
-					<hr />
-					<p style="margin-top:5px;display:block;">
-						<strong>※</strong> 별도로 업로드된 일러스트가 없으면, 해당 직업/전직 일러스트를 사용합니다.
-					</p>
-				</div>
+			
 			</div>
-		
+			
+			<div id="footer">
+				<span id='footer_left'>
+				</span>
+				<span id='footer_right'>
+					<strong>※ 문의 사항</strong> : <a href="http://bbs1.ruliweb.daum.net/gaia/do/ruliweb/family/1515/read?articleId=7886403&objCate1=52&bbsId=G001&itemId=2230&pageIndex=1" target="_black">여기</a>에 댓글을 남겨주세요.
+				</span>
+			</div>
 		</div>
-		
-		<div id="footer">
-			<span id='footer_left'>
-			</span>
-			<span id='footer_right'>
-				<strong>※ 문의 사항</strong> : <a href="http://bbs1.ruliweb.daum.net/gaia/do/ruliweb/family/1515/read?articleId=7886403&objCate1=52&bbsId=G001&itemId=2230&pageIndex=1" target="_black">여기</a>에 댓글을 남겨주세요.
-			</span>
-		</div>
-	</div>
 
 
 
-	<div id="imagePreloader"></div>
+		<div id="imagePreloader"></div>
 
 
 
-	<script type="text/javascript" src="./jumScript.js"></script>
+		<script type="text/javascript" src="./jumScript.js"></script>
+		<!-- Histats.com  START (hidden counter)-->
+		<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+		<a href="http://www.histats.com" target="_blank" title="web hit counter" ><script  type="text/javascript" >
+		try {Histats.start(1,3265353,4,0,0,0,"");
+		Histats.track_hits();} catch(err){};
+		</script></a>
+		<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3265353&101" alt="web hit counter" border="0"></a></noscript>
+		<!-- Histats.com  END  -->
 
-
-</body>
+	</body>
 </html>
