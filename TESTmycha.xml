@@ -1,0 +1,49 @@
+﻿<Module>
+<ModulePrefs>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+<!DOCTYPE html>
+
+<input id='loading' type='file'>
+<div id='show'>
+</div>
+<div id='text'>
+</div>
+
+<script type='text/javascript'>
+window.onload = function() {
+
+		var loading = document.getElementById('loading');
+		var show = document.getElementById('show');
+
+
+		loading.addEventListener('change', function(e) {
+			var file = loading.files[0];
+			var imageType = /image.*/;
+
+			if (file.type.match(imageType)) {
+				var reader = new FileReader();
+
+				reader.onload = function(e) {
+					show.innerHTML = "";
+
+					var img = new Image();
+					img.src = reader.result;
+					document.getElementById('text').innerHTML = '<strong>' + (Math.floor(Math.random()*21)+10).toString() + ' 채널을 추천합니다!</strong>';
+
+					show.appendChild(img);
+				}
+
+				reader.readAsDataURL(file);	
+			} else {
+				show.innerHTML = "File not supported!"
+			}
+		});
+
+}
+</script>
+
+]]>
+</Content>
+</Module>

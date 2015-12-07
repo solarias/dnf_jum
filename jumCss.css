@@ -1,0 +1,420 @@
+﻿* {
+	padding:0px;
+	margin:0px;
+	border:0px;
+	
+	font-family:Arial;
+	font-size:100%;
+	text-decoration:none;
+}
+
+hr { 
+	border: 1px inset;
+}
+
+/*폰트 관련 설정*/
+.center {
+	text-align:center;
+}
+/*폰트 관련 설정*/
+
+
+#wrapper {
+	overflow:hidden;
+	width:702px;
+	height:660px;
+	border:1px black solid;
+}
+
+	#top {
+		width:100%;
+		height:60px;
+		
+		background-color:Gainsboro;
+		border-bottom:1px black solid;
+		
+		text-align:center;
+		vertical-align:middle;
+	}
+		select {
+			overflow-y:scroll;
+			margin:0px;
+			
+			border:1px gray solid;
+		}
+		select option:first-child{
+			color:black;
+		}
+		
+		#server {
+			margin-top:10px;
+			width:180px;
+			height:40px;
+			float:left;
+			
+			border-right:1px black solid;
+		}
+			#server select {
+				width:150px;
+			}
+		
+		#character {
+			margin-top:8px;
+			width:320px;
+			height:40px;
+			float:left;
+			
+			border-right:1px black solid;
+		}
+			#character_random {
+				background: #F0F0F0; /* default */
+				background: -moz-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #DEDEDE));
+				background: -ms-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#DEDEDE')"; /* IE8 */
+				
+				width:50px;
+				height:20px;
+				
+				border:1px #A4A4A4 solid;
+				
+				color:gray;
+				font-weight:bold;
+			}
+				#character_random:hover {
+					border:1px #7B7B7B solid;
+				}
+				#character_random:active {
+					background: #DEDEDE;
+				}
+			#character select {
+				width:150px;
+			}
+		
+		#go {
+			margin-top:2px;
+			width:200px;
+			height:40px;
+			float:left;
+		}
+			#go p {
+				margin-bottom:1px;
+			}
+			#go_target {
+				width:170px;
+				height:20px;
+				
+				background:white;
+				border:1px gray solid;
+			}
+			#go_submit {
+				background: #F0F0F0; /* default */
+				background: -moz-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #DEDEDE));
+				background: -ms-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#DEDEDE')"; /* IE8 */
+				
+				width:170px;
+				height:34px;
+				
+				border:1px #A4A4A4 solid;
+				
+				color:gray;
+				font-size:18px;
+				font-weight:bold;
+			}
+				#go_submit:hover {
+						border:1px #7B7B7B solid;
+				}
+				#go_submit:active {
+						background: #DEDEDE;
+				}
+		
+	
+	#main {
+		overflow-y:hidden;
+		position:relative;
+		width:100%;
+		height:567px;
+		
+		background-image:url('https://googledrive.com/host/0B6rCL-wkBAtKfjIxMWtIeEFZbXhqWF9scTRSR0FMaU9RU09CQlRPZlI4cEtzbnUzd3FGUjA/images/backImperial.jpg');
+		
+		font-family:Arial;
+	}
+			#mainMateka{
+				overflow-y:hidden;
+				position:relative;
+				width:100%;
+				height:567px;
+				
+				background-color:#700000;
+				background-image:url('https://googledrive.com/host/0B6rCL-wkBAtKfjIxMWtIeEFZbXhqWF9scTRSR0FMaU9RU09CQlRPZlI4cEtzbnUzd3FGUjA/images/flame.gif');
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				background-size:700px 280px;
+				
+				color:white;
+				font-family:Arial;
+				text-align:center;
+			}
+		#mainText{
+			padding:10px;
+			width:680px;
+			height:547px;
+			
+			display:block;
+		}
+			#mainText h1 {
+				margin-bottom:12px;
+				font-size:30px;
+				text-align:center;
+			}
+			#mainText p {
+				margin-bottom:5px;
+				font-size:20px;
+			}
+			#mainText p.small {
+				margin-bottom:5px;
+				font-size:15px;
+			}
+			
+		#mainContent {
+			width:702px;
+			height:567px;
+			
+			border:none;
+			
+			display:none;
+		}
+		
+		#mySetting {
+			position:absolute;
+			padding:10px;
+			top:-210px;
+			right:0px;
+			width:395px;
+			height:269px;
+			
+			background-color:white;
+			border-left:1px black solid;
+			border-bottom:1px black solid;
+			
+			color:black;
+			font-size:15px;
+			
+			display:none;
+		}
+					#mySetting #mySettingLeft {
+						width:150px;
+						height:229px;
+						float:left;
+						
+						font-size:11px;
+						text-align:center;
+					}
+						#mySettingLeft #myShow {
+							width:150px;
+							height:190px;
+							
+							border:1px black solid;
+							
+							font-size:20px;
+						}
+					#mySetting #mySettingRight {
+						width:235px;
+						height:229px;
+						float:right;
+						
+						text-align:right;
+					}
+				#mySettingRight h1 {
+					font-size:25px;
+					margin-bottom:10px;
+					
+					text-align:center;
+				}
+				#mySettingRight p {
+					margin-bottom:10px;
+				}
+				#mySettingBottom {
+					clear:both;
+					
+					text-align:left;
+				}
+			#mySetting #myJobList{/*직업*/
+				width:170px;
+				
+				border:1px gray solid;
+			}
+			#mySetting #myClassList{/*전직*/
+				width:170px;
+				
+				border:1px gray solid;
+			}
+			#mySetting #myText{/*닉네임*/
+				width:167px;
+				
+				border:1px gray solid;
+			}
+			#mySetting #myImage{/*일러스트*/
+				width:150px;
+				
+				border:1px gray solid;
+			}
+				#myImageClear{/*일러스트 업로드*/
+					background: #FF6A00; /* default */
+					background: -moz-linear-gradient(top center, #FFFFFF, #FF6A00);
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #FF6A00));
+					background: -ms-linear-gradient(top center, #FFFFFF, #FF6A00);
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#FF6A00')"; /* IE8 */
+	
+					width:60px;
+					height:22px;
+					
+					border:1px #A4A4A4 solid;
+					
+					color:black;
+				}
+					#myImageClear:hover {
+						border:1px #7B7B7B solid;
+					}
+					#myImageClear:active {
+						background: #FFAA00;
+					}
+				#myImageUpload{/*일러스트 업로드*/
+					background: #F0F0F0; /* default */
+					background: -moz-linear-gradient(top center, #FFFFFF, #DEDEDE);
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #DEDEDE));
+					background: -ms-linear-gradient(top center, #FFFFFF, #DEDEDE);
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#DEDEDE')"; /* IE8 */
+					
+					margin-left:15px;
+					width:60px;
+					height:22px;
+					
+					border:1px #A4A4A4 solid;
+					
+					color:black;
+				}
+					#mySetting #myImageUpload:hover {
+						border:1px #7B7B7B solid;
+					}
+					#mySetting #myImageUpload:active {
+						background: #DEDEDE;
+					}
+			#mySetting #my_submit{/*추천받으러 가기*/
+				background: #F0F0F0; /* default */
+				background: -moz-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #DEDEDE));
+				background: -ms-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#DEDEDE')"; /* IE8 */
+				
+				margin-top:5px;
+				width:170px;
+				height:34px;
+				
+				border:1px #A4A4A4 solid;
+					
+				color:gray;
+				font-size:18px;
+				font-weight:bold;
+			}
+				#mySetting #my_submit:hover {
+						border:1px #7B7B7B solid;
+				}
+				#mySetting #my_submit:active {
+						background: #DEDEDE;
+				}
+			#mySetting #my_cancel{/*취소*/
+				background: #FF6A00; /* default */
+				background: -moz-linear-gradient(top center, #FFFFFF, #FF6A00);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #FF6A00));
+				background: -ms-linear-gradient(top center, #FFFFFF, #FF6A00);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#FF6A00')"; /* IE8 */
+				
+				margin-top:5px;
+				width:60px;
+				height:34px;
+				
+				border:1px #A4A4A4 solid;
+				
+				color:black;
+				font-size:18px;
+				font-weight:bold;
+			}
+				#mySetting #my_cancel:hover {
+						border:1px #7B7B7B solid;
+				}
+				#mySetting #my_cancel:active {
+						background: #FFAA00;
+				}
+
+	#footer {
+		width:100%;
+		height:32px;
+		
+		font-size:16px;
+	}
+	#footerMateka {
+		width:100%;
+		height:32px;
+		
+		background-color:black;
+		
+		color:white;
+		font-size:16px;
+	}
+		#footer_left{
+			margin:6px 0px 6px 6px;
+			float:left;
+			
+			display:block;
+		}
+			#footer_left select {
+				width:150px;
+			}
+			#footer_submit {
+				background: #F0F0F0; /* default */
+				background: -moz-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #DEDEDE));
+				background: -ms-linear-gradient(top center, #FFFFFF, #DEDEDE);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#DEDEDE')"; /* IE8 */
+				
+				margin-left:-3px;
+				width:80px;
+				height:23px;
+				
+				border:1px #A4A4A4 solid;
+				
+				color:gray;
+				font-weight:bold;
+			}
+				#footer_submit:hover {
+						border:1px #7B7B7B solid;
+				}
+				#footer_submit:active {
+						background: #DEDEDE;
+				}
+		#footer_right{
+			margin:6px 2px 6px 0px;
+			float:right;
+		
+			display:block;
+		}
+			#footer_right a {
+				color:blue;
+				font-weight:bold;
+				text-decoration:underline;
+			}
+			#footerMateka #footer_right a {
+				color:#00FFFF;
+				font-weight:bold;
+				text-decoration:underline;
+			}
+		
+	#imagePreloader {
+		width:1px;
+		height:1px;
+		
+		display:none;
+	}
