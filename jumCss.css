@@ -21,8 +21,11 @@ hr {
 
 #wrapper {
 	overflow:hidden;
+	
+	margin:0px auto;
 	width:702px;
 	height:660px;
+	
 	border:1px black solid;
 }
 
