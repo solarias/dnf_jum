@@ -624,7 +624,7 @@ window.onload = function() {
 			document.getElementById("mainContent").style.display = "block";
 			document.getElementById("mainContent").src = "\
 			https://solarias.github.io/dnf_dialog/index.html\
-			?autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
+			#autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
 			&selectServer=" + ser.toString() + "\
 			&selectTarget=" + tar.toString() + "\
 			&selectFile=9101_" + cha;
@@ -653,7 +653,7 @@ window.onload = function() {
 			document.getElementById("mainContent").style.display = "block";
 			document.getElementById("mainContent").src = "\
 			https://solarias.github.io/dnf_dialog/index.html\
-			?autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
+			#autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
 			&selectServer=" + ser.toString() + "\
 			&selectTarget=" + tar.toString() + "\
 			&selectFile=9101_" + cha;
@@ -764,7 +764,7 @@ window.onload = function() {
 			document.getElementById("mainContent").style.display = "block";
 			document.getElementById("mainContent").src = "\
 			https://solarias.github.io/dnf_dialog/index.html\
-			?selectJob=91\
+			#selectJob=91\
 			&selectClass=" + cla.toString() + "\
 			&selectName=" + name.toString() + "\
 			&selectURL=" + imgURL.toString() + "\
