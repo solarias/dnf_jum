@@ -628,9 +628,10 @@ window.onload = function() {
 				selectName : "",
 				selectJob : "91",
 				selectClass : "1",
+				selectURL : "",
 				selectServer : ser.toString(),
 				selectTarget : tar.toString(),
-				selectFile : "9101_" + cha,
+				selectFile : "9101_" + cha
 			};
 			localStorage["dnf_Jum"] = JSON.stringify(inputObject);
 			//점쟁이 화면 실행
@@ -665,9 +666,10 @@ window.onload = function() {
 				selectName : "",
 				selectJob : "91",
 				selectClass : "1",
+				selectURL : "",
 				selectServer : ser.toString(),
 				selectTarget : tar.toString(),
-				selectFile : "9101_" + cha,
+				selectFile : "9101_" + cha
 			};
 			localStorage["dnf_Jum"] = JSON.stringify(inputObject);
 			//점쟁이 화면 실행
@@ -787,7 +789,7 @@ window.onload = function() {
 				selectURL : imgURL.toString(),
 				selectServer : ser.toString(),
 				selectTarget : tar.toString(),
-				selectFile : "9101_" + cha,
+				selectFile : "9101_" + cha
 			};
 			localStorage["dnf_Jum"] = JSON.stringify(inputObject);
 			//점쟁이 화면 실행
