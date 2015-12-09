@@ -620,23 +620,14 @@ window.onload = function() {
 			cha = document.getElementById("etcList").value;
 			//첫 화면 가리기
 			document.getElementById("mainText").style.display = "none";
-			//로컬스토리지에 "문자열 형태로" 변수 저장
-			var inputObject = {
-				autoGo : "",
-				displayTime : "",
-				speed : "",
-				selectName : "",
-				selectJob : "91",
-				selectClass : "1",
-				selectURL : "",
-				selectServer : ser.toString(),
-				selectTarget : tar.toString(),
-				selectFile : "9101_" + cha
-			};
-			localStorage["dnf_Jum"] = JSON.stringify(inputObject);
 			//점쟁이 화면 실행
 			document.getElementById("mainContent").style.display = "block";
-			document.getElementById("mainContent").src = "https://solarias.github.io/dnf_dialog/index.html";
+			document.getElementById("mainContent").src = "\
+			https://solarias.github.io/dnf_dialog/index.html\
+			?autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
+			&selectServer=" + ser.toString() + "\
+			&selectTarget=" + tar.toString() + "\
+			&selectFile=9101_" + cha;
 		}
 	}
 	
@@ -658,23 +649,14 @@ window.onload = function() {
 			tar = document.getElementById("go_target").value;
 			//첫 화면 가리기
 			document.getElementById("mainText").style.display = "none";
-			//로컬스토리지에 "문자열 형태로" 변수 저장
-			var inputObject = {
-				autoGo : "",
-				displayTime : "",
-				speed : "",
-				selectName : "",
-				selectJob : "91",
-				selectClass : "1",
-				selectURL : "",
-				selectServer : ser.toString(),
-				selectTarget : tar.toString(),
-				selectFile : "9101_" + cha
-			};
-			localStorage["dnf_Jum"] = JSON.stringify(inputObject);
 			//점쟁이 화면 실행
 			document.getElementById("mainContent").style.display = "block";
-			document.getElementById("mainContent").src = "https://solarias.github.io/dnf_dialog/index.html";
+			document.getElementById("mainContent").src = "\
+			https://solarias.github.io/dnf_dialog/index.html\
+			?autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
+			&selectServer=" + ser.toString() + "\
+			&selectTarget=" + tar.toString() + "\
+			&selectFile=9101_" + cha;
 		}
 	}
 	
@@ -778,23 +760,18 @@ window.onload = function() {
 			}
 			//첫 화면 가리기
 			document.getElementById("mainText").style.display = "none";
-			//로컬스토리지에 "문자열 형태로" 변수 저장
-			var inputObject = {
-				autoGo : "",
-				displayTime : "",
-				speed : "",
-				selectName : name.toString(),
-				selectJob : "91",
-				selectClass : cla.toString(),
-				selectURL : imgURL.toString(),
-				selectServer : ser.toString(),
-				selectTarget : tar.toString(),
-				selectFile : "9101_" + cha
-			};
-			localStorage["dnf_Jum"] = JSON.stringify(inputObject);
 			//점쟁이 화면 실행
 			document.getElementById("mainContent").style.display = "block";
-			document.getElementById("mainContent").src = "https://solarias.github.io/dnf_dialog/index.html";
+			document.getElementById("mainContent").src = "\
+			https://solarias.github.io/dnf_dialog/index.html\
+			?selectJob=91\
+			&selectClass=" + cla.toString() + "\
+			&selectName=" + name.toString() + "\
+			&selectURL=" + imgURL.toString() + "\
+			&selectServer=" + ser.toString() + "\
+			&selectTarget=" + tar.toString() + "\
+			&selectFile=9101_" + cha;
+			console.log(document.getElementById("mainContent").src);
 		}
 		
 		//내 캐릭터 - 취소
