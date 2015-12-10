@@ -623,7 +623,7 @@ window.onload = function() {
 			//점쟁이 화면 실행
 			document.getElementById("mainContent").style.display = "block";
 			document.getElementById("mainContent").src = "\
-			https://solarias.github.io/dnf_dialog/index.html\
+			https://solarias.github.io/dnf_dialog/index.html?version=" + (new Date()).getTime() + "\
 			#autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
 			&selectServer=" + ser.toString() + "\
 			&selectTarget=" + tar.toString() + "\
@@ -652,7 +652,7 @@ window.onload = function() {
 			//점쟁이 화면 실행
 			document.getElementById("mainContent").style.display = "block";
 			document.getElementById("mainContent").src = "\
-			https://solarias.github.io/dnf_dialog/index.html\
+			https://solarias.github.io/dnf_dialog/index.html?version=" + (new Date()).getTime() + "\
 			#autoGo=&displayTime=&speed=&selectName=&selectJob=91&selectClass=1\
 			&selectServer=" + ser.toString() + "\
 			&selectTarget=" + tar.toString() + "\
@@ -763,7 +763,7 @@ window.onload = function() {
 			//점쟁이 화면 실행
 			document.getElementById("mainContent").style.display = "block";
 			document.getElementById("mainContent").src = "\
-			https://solarias.github.io/dnf_dialog/index.html\
+			https://solarias.github.io/dnf_dialog/index.html?version=" + (new Date()).getTime() + "\
 			#selectJob=91\
 			&selectClass=" + cla.toString() + "\
 			&selectName=" + name.toString() + "\
