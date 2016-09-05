@@ -275,12 +275,14 @@ window.onload = function() {
 				<option value='1'>'시간' " + type+ "받기</option>\
 				<option value='2'>'지역' " + type+ "받기</option>\
 				<option value='3'>'인물' " + type+ "받기</option>\
-				<option value='4'>'(지옥파티)던전, 난이도' " + type+ "받기</option>\
+				<option value='4'>'파워스테이션 지옥파티' " + type+ "받기</option>\
+				<option value='5'>'죽은자의 성 지옥파티' " + type+ "받기</option>\
+				<option value='6'>'메트로센터 지옥파티' " + type+ "받기</option>\
 			</select>\
 			<p/>";
 	//준비 - 내 캐릭터 설정창 (틀)
 	document.getElementById("my_submit").value = type + "받으러 가기";
-			
+
 	//준비 - 내 캐릭터 설정창 (직업)
 	document.getElementById("myJobList_p").innerHTML = "직　업 : \
 		<select id='myJobList'>\
@@ -426,7 +428,7 @@ window.onload = function() {
 		//전직 리스트 클릭 효과
 		classChange();
 	}
-	
+
 	//준비 - 부가서비스
 	document.getElementById("footer_left").innerHTML = "\
 			★\
@@ -440,8 +442,8 @@ window.onload = function() {
 	//준비 - 전용 서비스 (실행버튼)
 	document.getElementById("go").innerHTML += "\
 			<input id='go_submit' type='button' value='" + type + "받으러 가기' disabled='disabled'>";
-	
-	
+
+
 
 	//사전 : 캐릭터 랜덤 선택 준비
 	for (i=0;i<document.getElementById("npcList").length;i++) {
@@ -478,7 +480,7 @@ window.onload = function() {
 //==========================================================================================================================================
 // ※ Onload2 : 본격
 //==========================================================================================================================================
-	
+
 	//본격 : 서버, 대상 선택
 	document.getElementById("serverList").onchange = function() {//서버 선택 시
 		//사전 : 팝업창 없애기
@@ -504,7 +506,7 @@ window.onload = function() {
 			document.getElementById("go_submit").disabled = "disabled";
 		}
 	}
-	
+
 	document.getElementById("npcList").onchange = function() {//NPC 선택 시
 		//사전 : 팝업창 없애기
 		closePopup();
@@ -529,7 +531,7 @@ window.onload = function() {
 			}
 		}
 	}
-	
+
 	document.getElementById("monsterList").onchange = function() {//몬스터 선택 시
 		//사전 : 팝업창 없애기
 		closePopup();
@@ -554,11 +556,11 @@ window.onload = function() {
 			}
 		}
 	}
-	
+
 	document.getElementById("character_random").onclick = function() {//랜덤 선택 시
 		//사전 : 팝업창 없애기
 		closePopup();
-		
+
 		temp = Math.floor(Math.random() * (npcArr.length + monsterArr.length));
 		if (temp <= npcArr.length) { //랜덤이 NPC에 해당
 			//npc 랜덤 선택 표시 (전용 변수 입력 : 최종적으로 접속 시 입력됨)
@@ -596,7 +598,7 @@ window.onload = function() {
 			document.getElementById("go_target").style.backgroundColor="#F4FA58";
 		}
 	}
-	
+
 	document.getElementById("etcList").onchange = function() {//부가서비스 선택 시
 		//사전 : 팝업창 없애기
 		closePopup();
@@ -609,7 +611,7 @@ window.onload = function() {
 			document.getElementById("footer_submit").focus();
 		}
 	}
-	
+
 	document.getElementById("footer_submit").onclick = function() {//부가서비스 접속 선택 시
 		//사전 : 팝업창 없애기
 		closePopup();
@@ -630,7 +632,7 @@ window.onload = function() {
 			&selectFile=9101_" + cha;
 		}
 	}
-	
+
 	document.getElementById("go_submit").onclick = function() {//다음 진행시
 		if (document.getElementById("npcList").value == "내캐릭터") {
 			if (document.getElementById("mySetting").style.display != "block") {
@@ -659,7 +661,7 @@ window.onload = function() {
 			&selectFile=9101_" + cha;
 		}
 	}
-	
+
 	//내 캐릭터 - 직업 설정
 		document.getElementById("myJobList").onchange = function() {
 			//전직 리스트 생성
@@ -676,11 +678,11 @@ window.onload = function() {
 			document.getElementById("my_submit").style.color="black";
 			document.getElementById("my_submit").disabled = "";
 		}
-		
+
 	//내 캐릭터 - 전직 설정
-		
+
 	//내 캐릭터 - 이름 설정
-		
+
 	//내 캐릭터 - 일러스트 설정
 		//내 캐릭터 - 일러스트 설정 - 업로드
 		document.getElementById("myImageUpload").onclick = function() {
@@ -699,7 +701,7 @@ window.onload = function() {
 				img.src = document.getElementById("myImage").value;
 			}
 		}
-		
+
 		//내 캐릭터 - 일러스트 설정 - 초기화
 		document.getElementById("myImageClear").onclick = function() {
 			//이미지 입력란 삭제, 변수 변경
@@ -715,7 +717,7 @@ window.onload = function() {
 				document.getElementById("myShow").src = images + "a" + document.getElementById("myJobList").value + "_" + document.getElementById("myClassList").value + ".png";
 			}
 		}
-		
+
 	//내 캐릭터 - 추천받으러 가기
 		document.getElementById("my_submit").onclick = function() {//다음 진행시
 			//이름 특수문자 체크
@@ -773,7 +775,7 @@ window.onload = function() {
 			&selectFile=9101_" + cha;
 			console.log(document.getElementById("mainContent").src);
 		}
-		
+
 		//내 캐릭터 - 취소
 		document.getElementById("my_cancel").onclick = function() {
 			closePopup();
